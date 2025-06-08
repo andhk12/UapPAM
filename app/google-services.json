@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "448368722371",
+    "project_id": "uappam-ff32e",
+    "storage_bucket": "uappam-ff32e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:448368722371:android:ecd319277b31eabccafd76",
+        "android_client_info": {
+          "package_name": "com.example.uappam"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfbiyd1tvKo0wgFgL_muP0pzDZ_4hs3Fk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
