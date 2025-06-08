@@ -1,6 +1,7 @@
 package com.example.uappam.Api;
 
-import com.example.uappam.Plant; // Import model Plant Anda
+import com.example.uappam.Plant;
+import com.example.uappam.PlantResponse; // Import class baru
 import java.util.List;
 import retrofit2.Call;
 import retrofit2.http.Body;
@@ -14,16 +15,16 @@ public interface ApiService {
 
     // Endpoint: {{baseURL}}/plant/all
     @GET("plant/all")
-    Call<List<Plant>> getAllPlants();
+    Call<PlantResponse> getAllPlants(); // Diubah dari Call<List<Plant>>
 
     // Endpoint: {{baseURL}}/plant/{name}
     @DELETE("plant/{name}")
     Call<Void> deletePlant(@Path("name") String plantName);
 
     // --- Endpoint untuk prompt selanjutnya ---
-     @POST("plant/new")
-     Call<Plant> createPlant(@Body Plant plant);
+    @POST("plant/new")
+    Call<Plant> createPlant(@Body Plant plant);
 
-     @PUT("plant/{name}")
-     Call<Plant> updatePlant(@Path("name") String plantName, @Body Plant plant);
+    @PUT("plant/{name}")
+    Call<Plant> updatePlant(@Path("name") String plantName, @Body Plant plant);
 }

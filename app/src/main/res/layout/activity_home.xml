@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F0F4F7"
+    android:fitsSystemWindows="true"
     tools:context=".HomeActivity">
 
     <RelativeLayout

@@ -70,6 +70,6 @@ public class Plant implements Parcelable {
     public String getDescription() { return description; }
     public String getPrice() { return price; }
     public int getImageResource() {
-        return R.drawable.ic_tree_logo; // Pastikan Anda punya drawable ini
+        return R.drawable.item_plant; // Pastikan Anda punya drawable ini
     }
 }

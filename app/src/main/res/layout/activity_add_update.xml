@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#F0F4F7"
+    android:fitsSystemWindows="true"
     tools:context=".AddUpdateActivity">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -21,70 +22,106 @@
             tools:title="Tambah Tanaman" />
     </com.google.android.material.appbar.AppBarLayout>
 
-    <ImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="32dp"
-        android:src="@drawable/ic_tree_logo" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="24dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp">
+
+        <ImageView
+            android:id="@+id/iv_plant_detail_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/item_plant" />
+    </androidx.cardview.widget.CardView>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nama Tanaman :"
-        android:layout_marginTop="24dp"
+        android:text="Nama Tanaman"
         android:layout_marginHorizontal="24dp"
-        android:textColor="@android:color/black" />
+        android:textColor="#2E2E2E"
+        android:textSize="14sp" />
 
     <EditText
         android:id="@+id/et_plant_name"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edittext_background"
         android:hint="Masukkan nama tanaman"
-        android:inputType="textCapWords" />
+        android:inputType="textCapWords"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="#2E2E2E"
+        android:textColorHint="#999999"
+        android:textSize="14sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Harga :"
+        android:text="Harga"
         android:layout_marginTop="16dp"
         android:layout_marginHorizontal="24dp"
-        android:textColor="@android:color/black" />
+        android:textColor="#2E2E2E"
+        android:textSize="14sp" />
 
     <EditText
         android:id="@+id/et_plant_price"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
         android:layout_marginHorizontal="24dp"
+        android:background="@drawable/edittext_background"
         android:hint="Masukkan harga"
-        android:inputType="text" />
+        android:inputType="number"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="#2E2E2E"
+        android:textColorHint="#999999"
+        android:textSize="14sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Deskripsi :"
+        android:text="Deskripsi"
         android:layout_marginTop="16dp"
         android:layout_marginHorizontal="24dp"
-        android:textColor="@android:color/black" />
+        android:textColor="#2E2E2E"
+        android:textSize="14sp" />
 
     <EditText
         android:id="@+id/et_plant_description"
         android:layout_width="match_parent"
         android:layout_height="100dp"
+        android:layout_marginTop="8dp"
         android:layout_marginHorizontal="24dp"
+        android:background="@drawable/edittext_background"
         android:gravity="top"
         android:hint="Masukkan deskripsi"
-        android:inputType="textMultiLine" />
+        android:inputType="textMultiLine"
+        android:paddingStart="16dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="12dp"
+        android:textColor="#2E2E2E"
+        android:textColorHint="#999999"
+        android:textSize="14sp" />
 
     <Button
         android:id="@+id/btn_submit"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="24dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="24dp"
         android:background="@drawable/button_green_rounded"
+        android:text="Tambah"
         android:textColor="@android:color/white"
         android:textSize="16sp"
-        tools:text="Tambah" />
+        android:textStyle="bold"/>
 
 </LinearLayout>

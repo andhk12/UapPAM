@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#F0F4F7"
+    android:fitsSystemWindows="true"
     tools:context=".DetailActivity">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -33,7 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            tools:src="@drawable/ic_tree_logo" />
+            tools:src="@drawable/item_plant" />
     </androidx.cardview.widget.CardView>
 
     <TextView
@@ -41,7 +42,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="24dp"
-        android:background="@drawable/detail_field_background"
+        android:background="@drawable/edittext_background"
         android:padding="16dp"
         android:textColor="@android:color/black"
         android:textSize="18sp"
@@ -54,7 +55,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:layout_marginHorizontal="24dp"
-        android:background="@drawable/detail_field_background"
+        android:background="@drawable/edittext_background"
         android:padding="16dp"
         android:textColor="@android:color/black"
         android:textSize="16sp"
@@ -67,7 +68,7 @@
         android:layout_weight="1"
         android:layout_marginVertical="12dp"
         android:layout_marginHorizontal="24dp"
-        android:background="@drawable/detail_field_background"
+        android:background="@drawable/edittext_background"
         android:padding="16dp"
         android:textColor="@android:color/darker_gray"
         android:textSize="14sp"
