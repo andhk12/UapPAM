@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">UapPAM</string>
-
+    <string name="default_web_client_id">448368722371-pgo1vvmc59dit516rtq2j67eomt9clo2.apps.googleusercontent.com
+</string>
 </resources>

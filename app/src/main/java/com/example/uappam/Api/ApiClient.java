@@ -1,4 +1,4 @@
-package com.example.uappam.Api; // Buat package baru 'network' agar rapi
+package com.example.uappam.Api;
 
 import com.google.gson.Gson; // Import Gson
 import com.google.gson.GsonBuilder; // Import GsonBuilder

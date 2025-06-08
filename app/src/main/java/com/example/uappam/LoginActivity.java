@@ -1,4 +1,4 @@
-package com.example.uappam; // Ganti dengan nama package Anda
+package com.example.uappam;
 
 import android.content.Intent;
 import android.os.Bundle;
